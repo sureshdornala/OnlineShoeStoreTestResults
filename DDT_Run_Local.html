@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+ <head> 
+  <title>Automation Run Report</title> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+  <!-- Bootstrap --> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/bootstrap/js/jquery-1.12.4.min.js"></script> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/bootstrap/js/jquery-ui.min.js"></script> 
+  <link rel="stylesheet" href="http://cdlautowfnrpt.es.ad.adp.com:8080/report/bootstrap/css/bootstrap.css"> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/bootstrap/js/bootstrap.js"></script> 
+  <!-- Report --> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/js/reportNew.js"></script> 
+  <link href="http://cdlautowfnrpt.es.ad.adp.com:8080/report/css/report.css" rel="stylesheet"> 
+  <!-- Fancy Tree --> 
+  <link href="http://cdlautowfnrpt.es.ad.adp.com:8080/report/fancytree/skin-bootstrap/ui.fancytree.css" rel="stylesheet" class="skinswitcher"> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/fancytree/src/jquery.fancytree.js"></script> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/fancytree/src/jquery.fancytree.glyph.js"></script> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/fancytree/src/jquery.fancytree.table.js"></script> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/fancytree/src/jquery.fancytree.wide.js"></script> 
+  <script src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/tablefilter/tablefilter.js"></script> 
+  <!-- Materialize --> 
+  <script type="text/javascript" src="http://cdlautowfnrpt.es.ad.adp.com:8080/report/materialize/js/materialize.js"></script> 
+  <link rel="stylesheet" type="text/css" href="http://cdlautowfnrpt.es.ad.adp.com:8080/report/materialize/css/materialize.css"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,‌​100italic,300,300ita‌​lic,400italic,500,50‌​0italic,700,700itali‌​c,900italic,900" rel="stylesheet"> 
+  <style type="text/css">		#treetable {			table-layout: fixed;			font-family: "Roboto";			padding:		}		#treetable tr td:nth-of-type(1) {			text-align: right;		}		#treetable tr td:nth-of-type(2) {			text-align: center;		}		#treetable tr td:nth-of-type(3) {			min-width: 100px;			white-space: nowrap;			overflow: hidden;			text-overflow: ellipsis;		}	</style>
+ </head>
+ <body> 
+  <div style="display: none" id="JSONData">
+   {"type":"flowOrGroup", "children": [{"type":"component", "children": [{"type":"step", "children": [{"children": [],"stepParams":{"stepParam":[{"title":"","value":""}]},"title":"Component Parameters","status":"DONE","startTimestamp":"09/24/2021 18:16:19"}],"title":"Launch OnlineShoeStore","status":"PASSED","startTimestamp":"09/24/2021 18:16:19","iteration":1}],"title":"Launch Website","status":"PASSED","startTimestamp":"09/24/2021 18:16:19"},{"type":"component", "children": [{"type":"step", "children": [{"title":"SCREENSHOT_NAD25CG9302PK5_09242021_181635","status":"DONE","startTimestamp":"09/24/2021 18:16:36","url":"C:/Temp/OnlineShoeStore/TestResults/SCREENSHOT_NAD25CG9302PK5_09242021_181635.png"},{"children": [],"stepParams":{"stepParam":[{"title":"LABEL1","value":"Welcome to Shoe Store!"},{"title":"LABEL2","value":"Pre-Order your shoes today"},{"title":"LABEL3","value":"Choose a brand"},{"title":"LABEL4","value":"Remind me of new shoes"},{"title":"LABEL5","value":"Promotional Code"}]},"title":"Component Parameters","status":"DONE","startTimestamp":"09/24/2021 18:16:34"},{"title":"Verification Log_NAD25CG9302PK5_09242021_181634","status":"PASSED","startTimestamp":"09/24/2021 18:16:41","description":"\u003ctable class\u003d\u0027verLogTableTop\u0027 border\u003d\u00272\u0027\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable class\u003d\u0027verLogTable passed\u0027\u003e\u003ctr\u003e\u003ctd colspan\u003d\u00272\u0027\u003e\u003cspan class\u003d\u0027text\u0027\u003eVerify value for : WebObject(\"Welcome to Shoe Store!\")\u003cbr\u003eStatus: \u003cb\u003ePASSED\u003c/b\u003e\u003cbr\u003e____________________________________________\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eExpected:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003eWelcome to Shoe Store!\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eActual:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003eWelcome to Shoe Store!\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u0026nbsp;\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable class\u003d\u0027verLogTable passed\u0027\u003e\u003ctr\u003e\u003ctd colspan\u003d\u00272\u0027\u003e\u003cspan class\u003d\u0027text\u0027\u003eVerify value for : WebObject(\"Pre-Order your shoes today\")\u003cbr\u003eStatus: \u003cb\u003ePASSED\u003c/b\u003e\u003cbr\u003e____________________________________________\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eExpected:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003ePre-Order your shoes today\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eActual:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003ePre-Order your shoes today\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u0026nbsp;\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable class\u003d\u0027verLogTable passed\u0027\u003e\u003ctr\u003e\u003ctd colspan\u003d\u00272\u0027\u003e\u003cspan class\u003d\u0027text\u0027\u003eVerify value for : WebObject(\"Choose a brand\")\u003cbr\u003eStatus: \u003cb\u003ePASSED\u003c/b\u003e\u003cbr\u003e____________________________________________\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eExpected:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003eChoose a brand\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eActual:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003eChoose a brand\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u0026nbsp;\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable class\u003d\u0027verLogTable passed\u0027\u003e\u003ctr\u003e\u003ctd colspan\u003d\u00272\u0027\u003e\u003cspan class\u003d\u0027text\u0027\u003eVerify value for : WebObject(\"Remind me of new shoes\")\u003cbr\u003eStatus: \u003cb\u003ePASSED\u003c/b\u003e\u003cbr\u003e____________________________________________\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eExpected:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003eRemind me of new shoes\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eActual:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003eRemind me of new shoes\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u0026nbsp;\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable class\u003d\u0027verLogTable passed\u0027\u003e\u003ctr\u003e\u003ctd colspan\u003d\u00272\u0027\u003e\u003cspan class\u003d\u0027text\u0027\u003eVerify value for : WebObject(\"Promotional Code\")\u003cbr\u003eStatus: \u003cb\u003ePASSED\u003c/b\u003e\u003cbr\u003e____________________________________________\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eExpected:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003ePromotional Code\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eActual:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003ePromotional Code\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u0026nbsp;\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e"}],"title":"Verify HomePage","status":"PASSED","startTimestamp":"09/24/2021 18:16:34","iteration":1}],"title":"Verify labels on Home Page","status":"PASSED","startTimestamp":"09/24/2021 18:16:31"},{"type":"component", "children": [{"type":"step", "children": [{"title":"SCREENSHOT_NAD25CG9302PK5_09242021_181646","status":"DONE","startTimestamp":"09/24/2021 18:16:47","url":"C:/Temp/OnlineShoeStore/TestResults/SCREENSHOT_NAD25CG9302PK5_09242021_181646.png"},{"children": [],"stepParams":{"stepParam":[{"title":"LABEL1","value":"Valentino"}]},"title":"Component Parameters","status":"DONE","startTimestamp":"09/24/2021 18:16:45"},{"children": [],"stepParams":{"stepParam":[{"title":"Value","value":"Valentino"}]},"title":"WebComboBox(\u0027BrandName\u0027).select","status":"PASSED","startTimestamp":"09/24/2021 18:16:45"},{"title":"WebButton(\u0027Search By Brand\u0027).click","status":"PASSED","startTimestamp":"09/24/2021 18:17:01"}],"title":"Seach By Brand","status":"PASSED","startTimestamp":"09/24/2021 18:16:45","iteration":1},{"type":"step", "children": [{"title":"SCREENSHOT_NAD25CG9302PK5_09242021_181731","status":"DONE","startTimestamp":"09/24/2021 18:17:32","url":"C:/Temp/OnlineShoeStore/TestResults/SCREENSHOT_NAD25CG9302PK5_09242021_181731.png"},{"children": [],"stepParams":{"stepParam":[{"title":"LABEL1","value":"Valentino Camo Rockstud Pump"},{"title":"LABEL2","value":"$1,595.00"}]},"title":"Component Parameters","status":"DONE","startTimestamp":"09/24/2021 18:17:30"},{"title":"Verification Log_NAD25CG9302PK5_09242021_181730","status":"PASSED","startTimestamp":"09/24/2021 18:17:33","description":"\u003ctable class\u003d\u0027verLogTableTop\u0027 border\u003d\u00272\u0027\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable class\u003d\u0027verLogTable passed\u0027\u003e\u003ctr\u003e\u003ctd colspan\u003d\u00272\u0027\u003e\u003cspan class\u003d\u0027text\u0027\u003eVerify value for : WebObject(\"XPATH://td[@class\u003d\u0027shoe_result_value shoe_name\u0027]\")\u003cbr\u003eStatus: \u003cb\u003ePASSED\u003c/b\u003e\u003cbr\u003e____________________________________________\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eExpected:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003eValentino Camo Rockstud Pump\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eActual:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003eValentino Camo Rockstud Pump\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u0026nbsp;\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ctable class\u003d\u0027verLogTable passed\u0027\u003e\u003ctr\u003e\u003ctd colspan\u003d\u00272\u0027\u003e\u003cspan class\u003d\u0027text\u0027\u003eVerify value for : WebObject(\"XPATH://td[@class\u003d\u0027shoe_result_value shoe_price\u0027]\")\u003cbr\u003eStatus: \u003cb\u003ePASSED\u003c/b\u003e\u003cbr\u003e____________________________________________\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eExpected:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e$1,595.00\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e\u003cb\u003eActual:\u003c/b\u003e\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e\u003cspan class\u003d\u0027text\u0027\u003e$1,595.00\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u0026nbsp;\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e"}],"title":"Verify Results By Brand","status":"PASSED","startTimestamp":"09/24/2021 18:17:30","iteration":1}],"title":"Search By Brand and Verify Results","status":"PASSED","startTimestamp":"09/24/2021 18:16:42"}],"runID":-1,"runName":"DDT_Run_Local","browser":"Chrome32 88.0.4324.182","hostname":"NAD25CG9302PK5","osName":"Windows 10","userID":"dornalas","startTimestamp":"09/24/2021 18:16:16","endTimestamp":"09/24/2021 18:17:33","status":"PASSED","buildNumber":"NOT AVAILABLE","runDuration":"1 min"}
+  </div>
+  <div style="display: none" id="SplunkData"></div> 
+  <div class="row"> 
+   <div class="col s12"> 
+    <div class="card small blue lighten-2"> 
+     <div class="card-content"> 
+      <div style="float: left"> 
+       <i class="material-icons large">view_list</i>&nbsp;&nbsp;&nbsp;&nbsp; 
+      </div> 
+      <span class="card-title">Automation Run Report</span> 
+      <div class="chip"> 
+       <b>Run Name: </b>
+       <span id="runName"></span> 
+      </div> 
+      <div class="chip"> 
+       <b>Run Status: </b>
+       <span id="runStatus"></span> 
+      </div> 
+      <div class="chip"> 
+       <b>Browser: </b>
+       <span id="browser"></span> 
+      </div> 
+      <div class="chip"> 
+       <b>Host Name: </b>
+       <span id="hostName"></span> 
+      </div> 
+      <div class="chip"> 
+       <b>OS Name: </b>
+       <span id="osName"></span> 
+      </div> 
+      <div class="chip"> 
+       <b>User ID: </b>
+       <span id="userID"></span> 
+      </div> 
+      <div class="chip"> 
+       <b>Company Code: </b>
+       <span id="coCode"></span> 
+      </div> 
+      <div class="chip"> 
+       <b>Build #: </b>
+       <span id="buildNumber"></span> 
+      </div> 
+      <div class="chip"> 
+       <b>Run Time: </b>
+       <span id="runTime"></span> 
+      </div> 
+      <br> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="row"> 
+   <div class="col s12"> 
+    <div class="card tiny green accent-2"> 
+     <div class="card-content" style="float:left"> 
+      <div class="input-field col s0"> 
+       <label>Search :</label> 
+      </div> 
+      <div class="input-field col s0"> 
+       <select id="slcColumns" name="slcColumns"> <option value="2">Name</option> <option value="3">Status</option> <option value="1">Type</option> <option value="4">Iteration</option> <option value="5">Start Date/Time</option> <option value="0">Step</option> <option value="6">Details</option> </select> 
+      </div> 
+      <div class="input-field col s1"> 
+       <select id="slcOperators" name="slcOperators"> <option value="*">Containing</option> <option value="=">Exactly matching</option> <option value="!">Excluding</option> <option value="rgx:">Matching RegEx</option> <option value="{">Starts with</option> <option value="}">Ends with</option> <option value="<">Less than</option> <option value="<=">Less than or equal to</option> <option value=">">Greater than</option> <option value=">=">Greater than or equal to</option> <option value="[empty]">Only empty</option> <option value="[nonempty]">Only non-empty</option> </select> 
+      </div> 
+      <div class="input-field col s0"></div> 
+      <div class="input-field col s3"> 
+       <input id="inpSearch" type="text" class="validate" placeholder="Search"> 
+      </div> 
+      <button type="submit" class="btn btn-small green darken-3" id="filterData">Filter</button> &nbsp;&nbsp;&nbsp; 
+      <button type="reset" class="btn btn-small" id="clearFilters">Clear</button> 
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+      <button type="reset" class="btn btn-small" id="uploadResults">Upload Results</button> 
+     </div> 
+     <div style="text-align:center;width:fit-content;display:inline-block;padding:7px;"> 
+      <b><span style="font-style:italic;color:darkred;">Splunk</span><br><a id="splunkExceptions" href="#" style="color:darkblue"></a></b> 
+     </div> 
+     <div class="tap-target cyan lighten-2" data-activates="splunkMenu"> 
+      <div class="tap-target-content"> 
+       <h5 style="color:darkred"><b>Splunk Metrics</b></h5> 
+       <br> 
+       <div> 
+        <ul class="collection minimal"> 
+         <li class="collection-item"><span class="title"><b>Total Exceptions:</b></span> <span id="splunkTotalExceptions"></span> </li> 
+         <li class="collection-item"><span class="title"><b>Unique Exceptions:</b></span> <span id="splunkUniqueExceptions"></span> </li> 
+         <li class="collection-item"><span class="title"><b>Client ID:</b></span> <span id="splunkClientId"></span> </li> 
+         <li class="collection-item"><span class="title"><b>Start Date/Time:</b></span> <span id="splunkStartDateTime"></span> </li> 
+         <li class="collection-item"><span class="title"><b>End Date/Time:</b></span> <span id="splunkEndDateTime"></span> </li> 
+         <li class="collection-item"><span class="title"><b>Search Duration:</b></span> <span id="splunkSearchDuration"></span> </li> 
+         <li class="collection-item"><span class="title"><b>Splunk Search Link</b></span><b> <p id="splunkDetals"><a target="_blank" style="color:darkblue" href="" id="splunkDetailsLink">Click here to view the search in Splunk</a></p> </b></li>
+         <b> </b>
+        </ul>
+        <b> </b>
+       </div>
+       <b> </b>
+      </div>
+      <b> </b>
+     </div>
+     <b> </b>
+    </div>
+    <b> </b>
+   </div>
+   <b> </b>
+  </div>
+  <b> 
+   <div class="row" style="overflow: hidden; width: 100%"> 
+    <div id="stepsPanel"> 
+     <div class="col s12"> 
+      <nav> 
+       <div class="nav-wrapper"> 
+        <span class="brand-logo"><i class="material-icons">receipt</i>Results</span> 
+        <ul class="right hide-on-med-and-down"> 
+         <li><a id="expandCollapse" title="Expand/Collapse All" class="expandAll"><i class="material-icons">filter_none</i></a></li> 
+        </ul> 
+       </div> 
+      </nav> 
+      <div style="border: 1px solid bisque;"> 
+       <table id="resultsTable" class="table table-bordered table-condensed fancytree-fade-expander"> 
+        <colgroup> 
+         <col width="30px">
+        </colgroup> 
+        <colgroup>
+         <col width="80px">
+        </colgroup> 
+        <colgroup>
+         <col width="*">
+        </colgroup> 
+        <colgroup>
+         <col width="100px">
+        </colgroup> 
+        <colgroup>
+         <col width="100px">
+        </colgroup> 
+        <colgroup>
+         <col width="150px">
+        </colgroup>  
+        <thead> 
+         <tr> 
+          <th>Step</th> 
+          <th>Type</th> 
+          <th>Name</th> 
+          <th>Status</th> 
+          <th>Iteration</th> 
+          <th>Start Date/Time</th> 
+          <th style="display: none">Details</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr> 
+          <td></td> 
+          <td></td> 
+          <td></td> 
+          <td></td> 
+          <td></td> 
+          <td></td> 
+          <td style="display: none"></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="detailsPanel"> 
+     <div class="col s12"> 
+      <nav> 
+       <div class="nav-wrapper" id="detailsPanelheader"> 
+        <span class="brand-logo"><i class="material-icons">comment</i>Details</span> 
+        <a href="#!" class="modal-action modal-close" id="closeDetailsPanel" style="float: right"><i class="material-icons">close</i></a> 
+       </div> 
+      </nav> 
+      <div id="detailsContent"> 
+       <ul class="collection"> 
+        <li class="collection-item avatar"><i class="material-icons circle blue">storage</i> <span class="title">Type</span> <p id="detailType">NA</p> </li> 
+        <li class="collection-item avatar"><i class="material-icons circle orange">label</i> <span class="title">Name</span> <p id="detailName">NA</p> </li> 
+        <li class="collection-item avatar"><i class="material-icons circle" id="detailStatusIcon">check_circle</i> <span class="title">Status</span> <p id="detailStatus">NA</p> </li> 
+        <li class="collection-item avatar"><i class="material-icons circle teal">loop</i> <span class="title">Iteration</span> <p id="detailIteration">NA</p> </li> 
+        <li class="collection-item avatar"><i class="material-icons circle light-green">access_time</i> <span class="title">Start Date/Time</span> <p id="detailStartDateTime">NA</p> </li> 
+        <li class="collection-item avatar"><i class="material-icons circle brown">description</i> <span class="title">Details</span><br> 
+         <div id="details"> 
+          <i>No details to display</i> 
+         </div> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="modal" id="screenshot"> 
+     <div style="text-align: right;"> 
+      <a href="#!" class="modal-action modal-close" id="closeModal"><i class="material-icons">close</i></a> 
+     </div> 
+     <div class="modal-content" id="resultModal"></div> 
+    </div> 
+    <div class="modal" id="rallyResults"> 
+     <div style="text-align: right;"> 
+      <a href="#!" class="modal-action modal-close" id="closeModal"><i class="material-icons">close</i></a> 
+     </div> 
+     <div class="modal-content" id="uploadResultsModal"> 
+      <div style="border: 1px solid bisque;"> 
+       <table id="uploadResultsTable" class="table table-bordered table-condensed fancytree-fade-expander"> 
+        <colgroup> 
+         <col width="20px">
+        </colgroup> 
+        <colgroup>
+         <col width="10px">
+        </colgroup> 
+        <colgroup>
+         <col width="30px">
+        </colgroup> 
+        <colgroup>
+         <col width="60px">
+        </colgroup> 
+        <colgroup>
+         <col width="100px">
+        </colgroup> 
+        <colgroup>
+         <col width="90px">
+        </colgroup>  
+        <thead> 
+         <tr> 
+          <th><input type="checkbox" class="filled-in" id="selectAllTCs" style="display: none"><label for="selectAllTCs"></label></th> 
+          <th>#</th> 
+          <th>Test Case ID</th> 
+          <th>Status</th> 
+          <th>Run Date/Time</th> 
+          <th>Upload Status</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr> 
+          <td></td> 
+          <td></td> 
+          <td></td> 
+          <td></td> 
+          <td></td> 
+          <td></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <br> 
+       <div style="text-align: center"> 
+        <button type="reset" class="btn btn-small" id="uploadToRally">Upload Results to Rally</button> 
+       </div> 
+       <br> 
+      </div> 
+     </div> 
+     <div style="z-index: 99; position: fixed; left: 40%; top: 10%; display: none" id="spinner"> 
+      <div class="preloader-wrapper big active"> 
+       <div class="spinner-layer spinner-blue-only"> 
+        <div class="circle-clipper left"> 
+         <div class="circle"></div> 
+        </div> 
+        <div class="gap-patch"> 
+         <div class="circle"></div> 
+        </div> 
+        <div class="circle-clipper right"> 
+         <div class="circle"></div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> <a id="splunkMenu" class="btn btn-floating btn-large blue darken-2"></a></b>
+ </body>
+</html>
