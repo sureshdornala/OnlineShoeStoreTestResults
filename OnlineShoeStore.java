@@ -95,7 +95,7 @@ public class OnlineShoeStore  extends DDTComponentBase {
 	
 	
 	
-	@Component(Name = "Seach By Brand", Params = {"label1" })
+	@Component(Name = "Search By Brand", Params = {"label1" })
 	public void seachByBrand(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
 		
 		ObjectTypes Page = Browser.Page("HomePage");
@@ -124,6 +124,35 @@ public class OnlineShoeStore  extends DDTComponentBase {
 		new WebObject(ShoeName).verifyValue(pm.Parameter("label1"));
 		new WebObject(ShoePrice).verifyValue(pm.Parameter("label2"));
 		m_results.endVerificationLogStep();
+	}
+	
+	
+	/// Page.WebLink("January").click();
+	
+	@Component(Name = "Search By Month", Params = {"label1" })
+	public void seachByMonth(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
+		
+		ObjectTypes Page = Browser.Page("HomePage");
+		Page.WebLink(pm.Parameter("label1")).click();
+
+		General.sleep(2);
+	}
+	
+	//Component Template for Verify 
+	@Component(Name = "Verify Results By Month", Params = {"label1","label2","label3","label4","label5","label6","label7","label8","label9"})
+	public void verifyResultsByMonth(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
+		ObjectTypes Page = Browser.Page("HomePage");
+		m_results.startVerificationLogStep();
+		String ShoeName =  "XPATH://td[@class='shoe_result_value shoe_name'][contains(text(),'" + pm.Parameter("label1") + "')]";
+	//	//ShoeName//following::tr/td[@class='shoe_result_value shoe_price']
+		String ShoePrice =  ShoeName + "//following::tr/td[@class='shoe_result_value shoe_price']";
+		
+		m_results.startVerificationLogStep();
+		new WebObject(ShoeName).verifyValue(pm.Parameter("label1"));
+		new WebObject(ShoePrice).verifyValue(pm.Parameter("label2"));
+		
+		m_results.endVerificationLogStep();
+	
 	}
 	
 	
