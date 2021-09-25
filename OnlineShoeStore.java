@@ -3,27 +3,16 @@ package com.adp.wfnddt.components.people.benefits.OnlineShoeStore;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-
 import javax.xml.datatype.DatatypeConfigurationException;
-import org.apache.commons.lang3.StringUtils;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import com.adp.wfnddt.aspects.Component;
 import com.adp.wfnddt.commonmethods.General;
-import com.adp.wfnddt.commonmethods.Navigation;
 import com.adp.wfnddt.core.BrowserManager;
 import com.adp.wfnddt.core.DDTComponentBase;
 import com.adp.wfnddt.core.DDTController;
 import com.adp.wfnddt.core.DDTFrameworkException;
-import com.adp.wfnddt.core.GlobalVariables;
-import com.adp.wfnddt.core.GlobalVariables.ScrollType;
-import com.adp.wfnddt.objectmanager.ObjectMap;
 import com.adp.wfnddt.objectmanager.ObjectTypes;
-import com.adp.wfnddt.objectmanager.WebButton;
-import com.adp.wfnddt.objectmanager.WebLink;
 import com.adp.wfnddt.objectmanager.WebObject;
-import com.adp.wfnddt.objectmanager.WebStatic;
-import com.adp.wfnddt.objectmanager.BaseObject.ClickType;
 import com.adp.wfnddt.parammanager.ParamManager;
 import com.adp.wfnddt.results.DDTResultsReporter;
 
@@ -93,6 +82,72 @@ public class OnlineShoeStore  extends DDTComponentBase {
 		
 	}
 	
+	@Component(Name = "Go Home", Params = {})
+	public void goHome(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
+		
+		ObjectTypes Page = Browser.Page("HomePage");
+		Page.WebLink("Home").click();
+
+		General.sleep(2);
+	}
+	
+	//Enter Email Address
+	@Component(Name = "Enter an Email Address", Params = {"label1"})
+	public void enterAnEmailAddress(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
+		ObjectTypes Page = Browser.Page("HomePage");
+		m_results.startVerificationLogStep();
+
+		if (Page.WebTextBox("Enter Email Address").exists()) {
+			Page.WebTextBox("Enter Email Address").click();
+			Page.WebTextBox("Enter Email Address").set(pm.Parameter("label1"));
+			Page.WebButton("Remind Email Submit").click();
+		}
+		else {
+			System.out.println("Enter Email Address Textbox is not Available");
+			}
+		
+		m_results.endVerificationLogStep();
+	
+	}
+	
+	//Enter Promotional Code
+	@Component(Name = "Enter a Promotional Code", Params = {"label1"})
+	public void enteraPromotionalCode(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
+		ObjectTypes Page = Browser.Page("HomePage");
+		m_results.startVerificationLogStep();
+		if (Page.WebTextBox("Enter Promotional Code").exists()) {
+				Page.WebTextBox("Enter Promotional Code").click();
+				Page.WebTextBox("Enter Promotional Code").set(pm.Parameter("label1"));
+				Page.WebButton("Promotional Code Submit").click();
+			}
+		else {
+				System.out.println("Enter Promotional Code TextBox is not Available");
+			}
+		
+		m_results.endVerificationLogStep();
+	
+	}
+	
+	//Verify Alerts
+	@Component(Name = "Verify Alerts", Params = {"label1"})
+	public void verifyAlerts(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
+		ObjectTypes Page = Browser.Page("HomePage");
+		m_results.startVerificationLogStep();
+		Page.WebStatic("Alert Message").verifyValue(pm.Parameter("label1"));
+		m_results.endVerificationLogStep();
+	
+	}
+	
+	//Verify Notice
+	@Component(Name = "Verify Notice", Params = {"label1"})
+	public void verifyNotice(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
+		ObjectTypes Page = Browser.Page("HomePage");
+		m_results.startVerificationLogStep();
+		Page.WebStatic("Notice Message").verifyValue(pm.Parameter("label1"));
+		
+		m_results.endVerificationLogStep();
+	
+	}
 	
 	
 	@Component(Name = "Search By Brand", Params = {"label1" })
@@ -112,7 +167,7 @@ public class OnlineShoeStore  extends DDTComponentBase {
 	// Verify Results By Brand
 	@Component(Name = "Verify Results By Brand", Params = {"label1","label2","label3","label4","label5","label6","label7","label8","label9"})
 	public void verifyResultsByBrand(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
-		ObjectTypes Page = Browser.Page("HomePage");
+		//ObjectTypes Page = Browser.Page("HomePage");
 		
 		
 		//td[@class='shoe_result_value shoe_name']
@@ -141,7 +196,7 @@ public class OnlineShoeStore  extends DDTComponentBase {
 	//Component Template for Verify 
 	@Component(Name = "Verify Results By Month", Params = {"label1","label2","label3","label4","label5","label6","label7","label8","label9"})
 	public void verifyResultsByMonth(ParamManager pm) throws DDTFrameworkException, DatatypeConfigurationException, IOException {
-		ObjectTypes Page = Browser.Page("HomePage");
+//		ObjectTypes Page = Browser.Page("HomePage");
 		m_results.startVerificationLogStep();
 		String ShoeName =  "XPATH://td[@class='shoe_result_value shoe_name'][contains(text(),'" + pm.Parameter("label1") + "')]";
 	//	//ShoeName//following::tr/td[@class='shoe_result_value shoe_price']
@@ -154,6 +209,8 @@ public class OnlineShoeStore  extends DDTComponentBase {
 		m_results.endVerificationLogStep();
 	
 	}
+	
+	
 	
 	
 }

@@ -12,7 +12,37 @@ Scenario: Verify labels on Home Page
 		| label4|	| Remind me of new shoes |
 		| label5| 	| Promotional Code| 
 
+Scenario: Verify Alerts and Messages And Negative Scenarios
+ 		
+ 		When I Go Home
+			|  |  |  |				
 
+		When I Enter an Email Address
+			| label1 |  |  |	
+		Then I Verify Alerts
+			| label1 |  | Please enter an email address |
+			
+		When I Enter an Email Address
+			| label1 |  |  abcdefgh	|	
+		Then I Verify Alerts
+			| label1 |  | Invalid email format. Ex. name@example.com |
+		
+		When I Enter a Promotional Code
+			| label1 |  |  |
+		Then I Verify Alerts
+			| label1 |  | Please enter a promotional code |
+			
+		When I Search By Brand
+			| label1 |  | Select Brand |	
+		Then I Verify Notice
+			| label1 |  | Please Select a Brand |
+			
+		When I Enter an Email Address
+			| label1 |  |  abc@abc.com |
+		Then I Verify Notice
+			| label1 |  | Thanks! We will notify you of our new shoes at this email: abc@abc.com |	
+			
+			
 Scenario: Search By Brand and Verify Results
 	When I Search By Brand
 		| label1 |  | Valentino |
@@ -48,9 +78,9 @@ Scenario: Search By Month and Verify Results
 				
 
 Scenario: Search By All Shoes  - Force Failed Test with Incorrect Expected Results 
-	
+
 	When I Search By Month
-		| label1 |  | All Shoes |			
+			| label1 |  | All Shoes |			
 	
 	Then I Verify Results By Month
 				| label1 |  | Valentino Camo Rockstud Pump |
@@ -64,4 +94,11 @@ Scenario: Search By All Shoes  - Force Failed Test with Incorrect Expected Resul
 				| label2 |  | $1,889.95  |
 	Then I Verify Results By Month
 				| label1 |  | Lanvin Pointy Toe Python Pump |
-				| label2 |  | $1,5599999999999999999999.00  |					
+				| label2 |  | $1,5599999999999999999999.00  |
+				
+				
+
+			
+			
+							
+				

@@ -3,6 +3,15 @@
     {
       "Page Name": "HomePage",
       "Data": [
+   
+   				{
+					"Object Name": "Home",
+					"Selector": "XPATH://a[@class='navbar-brand'][contains(text(),'Home')]",
+					"Object Type": "WebLink",
+					"ID": "3",
+					"Frame ID": "#"
+				},
+   
         {
           "Object Name": "Welcome to Shoe Store!",
           "Selector": "XPATH://div[2]/div/h2",
@@ -89,17 +98,27 @@
                "Frame ID": "#"
         },    
      
+        {
+               "Object Name": "Alert Message",
+               "Selector": "XPATH://div[@class='flash alert_danger']",
+               "Object Type": "WebStatic",
+               "ID": "2",
+               "Frame ID": "#"
+        },     			
+          
+        {
+               "Object Name": "Notice Message",
+               "Selector": "XPATH://div[@id='flash']/div[1]",
+               "Object Type": "WebStatic",
+               "ID": "2",
+               "Frame ID": "#"
+        },     			
+     					
+     			
      			
      			{
 					"Object Name": "January",
 					"Selector": "XPATH://a[contains(text(),'January')]",
-					"Object Type": "WebLink",
-					"ID": "3",
-					"Frame ID": "#"
-				},
-				{
-					"Object Name": "Home",
-					"Selector": "XPATH://a[contains(text(),'Home')]",
 					"Object Type": "WebLink",
 					"ID": "3",
 					"Frame ID": "#"
